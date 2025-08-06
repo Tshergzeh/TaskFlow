@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("You are at the tasks index")
+    return HttpResponse(f"You are at the tasks index")
