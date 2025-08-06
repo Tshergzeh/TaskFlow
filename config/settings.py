@@ -40,6 +40,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'config.accounts.apps.AccountsConfig',
+    'config.notifications.apps.NotificationsConfig',
+    'config.tasks.apps.TasksConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -184,3 +187,5 @@ LOGGING = {
         },
     },
 }
+
+AUTH_USER_MODEL = 'accounts.User'
